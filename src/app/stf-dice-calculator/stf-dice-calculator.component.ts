@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+const random = require('random');
 
 @Component({
   selector: 'app-stf-dice-calculator',
@@ -15,7 +16,8 @@ export class StfDiceCalculatorComponent {
   }
 
   roll(dWhat): Number {
-    const randomNum = Math.random() * dWhat + 1
+    const randomNum = random.uniformInt(1, dWhat)();
+
     return Math.floor(randomNum);
   }
 
