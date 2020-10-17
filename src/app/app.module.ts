@@ -3,15 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { StfDiceCalculatorComponent } from './stf-dice-calculator/stf-dice-calculator.component';
-import { StfKeypadComponent } from './stf-keypad/stf-keypad.component';
-import { from } from 'rxjs';
+import { StfDiceComponent } from './stf-dice/stf-dice.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StfDiceCalculatorComponent,
-    StfKeypadComponent
+    StfDiceComponent
   ],
   imports: [
     BrowserModule,

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StfDiceCalculatorComponent } from './stf-dice-calculator.component';
+import { StfDiceComponent } from './stf-dice.component';
 
-describe('StfDiceCalculatorComponent', () => {
-  let component: StfDiceCalculatorComponent;
-  let fixture: ComponentFixture<StfDiceCalculatorComponent>;
+describe('StfDiceComponent', () => {
+  let component: StfDiceComponent;
+  let fixture: ComponentFixture<StfDiceComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StfDiceCalculatorComponent ]
+      declarations: [ StfDiceComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StfDiceCalculatorComponent);
+    fixture = TestBed.createComponent(StfDiceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

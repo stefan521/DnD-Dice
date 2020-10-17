@@ -1,0 +1,20 @@
+<div
+    class="die-tile"
+    (click)="roll()"
+    [ngStyle]="rolling ? {borderColor: 'white', animationDelay: '1s'} : {}"
+>
+    <div
+        class="die-body"
+        [ngStyle]="rolling ? {animation: 'spin ease-in-out 1s', animationIterationCount: 3} : {}"
+    >
+    </div>
+
+    <div
+        class="die-name"
+        [ngStyle]="
+            rolling ? {animation: 'fade-out 1s forwards'} :
+                      {animation: 'fade-in 1s', animtionDelay: '1s'}"
+    >
+        D{{sidesCount}}
+    </div>
+</div>

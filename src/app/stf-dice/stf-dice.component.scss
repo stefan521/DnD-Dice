@@ -1,0 +1,60 @@
+.die-tile {
+    width: 15vw;
+    height: 15vw;
+    min-width: 10em;
+    min-height: 10em;
+    max-width: 20em;
+    max-height: 20em;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border: 2px white solid;
+
+    .die-body {
+        display: inline-block;
+        width: 60%;
+        height: 60%;
+        background-color: indianred;
+    }
+
+    .die-name {
+        font-family: 'Krona One', sans-serif;
+    }
+}
+
+.die-tile:hover {
+    border: 2px blueviolet solid;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 100%;
+    }
+    
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+    
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+
+    100%{
+        transform:rotate(359deg);
+    }
+}
